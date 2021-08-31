@@ -12,33 +12,35 @@
 
 // A
 
-function palindromeDetector ( word ) 
-{
+// function palindromeDetector ( word ) 
+// {
 
-    for (i = 0; i < word.length / 2; i++){
+//     for (i = 0; i < word.length / 2; i++){
 
-        if ( word.charAt[i] !== word.charAt[str.length -1 -i]) {
+//         if ( word.charAt(i) !== word.charAt(word.length -1 -i)) {
 
-            return true
+//             return false;
 
-        }
+//         }
 
-        console.log(flag)
+//         console.log(flag)
 
-    }
+//     }
+
+//     return true;
     
-}
+// }
 
-let userWord = prompt('inserisci una parola per sapere se è palindroma');
+// let userWord = prompt('inserisci una parola per sapere se è palindroma');
 
-if (palindromeDetector(userWord)){
+// if (palindromeDetector(userWord)){
 
-    console.log('la parola è palindroma')
+//     console.log('la parola è palindroma')
     
-} else {
+// } else {
 
-    console.log('la parola NON è palindroma')
-}
+//     console.log('la parola NON è palindroma')
+// }
 
 
 
@@ -46,24 +48,45 @@ if (palindromeDetector(userWord)){
 
 // B
 
-// function getRandomNumber(min, max) {
-//     min = Math.ceil(min);
-//     max = Math.floor(max);
-//     return Math.floor(Math.random() * (max - min) + min);
-// }
+function getRandomNumber(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
+}
 
-// function checkEvenOdd(integer) {
+function isEven(integer) {
 
-//     if (integer % 2 == 0){
+    if (integer % 2 == 0){
         
-//         flag = true;
+        return true;
 
-//     }
-// }
+    }
 
-// let userEvenOddChoice = prompt('Scegli se pari o dispari');
-// let userNumber = parseInt(prompt('Scegli un numero da 1 a 5'));
-// let aiNumber = getRandomNumber(1, 5);
+     return false;
+}
+
+let userEvenOddChoice = prompt('Scegli se pari o dispari');
+let userNumber = parseInt(prompt('Scegli un numero da 1 a 5'));
+let aiNumber = getRandomNumber(1, 5);
+
+let somma = userNumber + aiNumber;
+
+console.log(somma);
+console.log(aiNumber);
 
 
+
+if ((isEven(somma)) || (userEvenOddChoice == 'pari')) {
+
+    console.log('hai vinto tu')
+
+} else if ((isEven(somma) == false) || (userEvenOddChoice == 'dispari' )){
+
+    console.log('hai vinto tu')
+
+} else {
+
+    console.log('ha vinto il computer')
+
+}
   
