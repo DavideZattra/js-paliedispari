@@ -12,24 +12,58 @@
 
 // A
 
-let userWord = prompt('inserisci una parola per sapere se è palindroma');
+function palindromeDetector ( word ) 
+{
 
-function palindromeDetector(parola){
+    for (i = 0; i < word.length / 2; i++){
 
-    for (i = 0; i < parola.length; i++){
+        if ( word.charAt[i] !== word.charAt[str.length -1 -i]) {
 
-        if (parola.charAt(i) === parola.charAt(str.length-i++)){
-
-            flag = true
-
-        } else {
-
-            flag = false
+            return true
 
         }
-        
+
+        console.log(flag)
 
     }
+    
 }
 
-if (palindromeDetector(userword))
+let userWord = prompt('inserisci una parola per sapere se è palindroma');
+
+if (palindromeDetector(userWord)){
+
+    console.log('la parola è palindroma')
+    
+} else {
+
+    console.log('la parola NON è palindroma')
+}
+
+
+
+
+
+// B
+
+// function getRandomNumber(min, max) {
+//     min = Math.ceil(min);
+//     max = Math.floor(max);
+//     return Math.floor(Math.random() * (max - min) + min);
+// }
+
+// function checkEvenOdd(integer) {
+
+//     if (integer % 2 == 0){
+        
+//         flag = true;
+
+//     }
+// }
+
+// let userEvenOddChoice = prompt('Scegli se pari o dispari');
+// let userNumber = parseInt(prompt('Scegli un numero da 1 a 5'));
+// let aiNumber = getRandomNumber(1, 5);
+
+
+  
